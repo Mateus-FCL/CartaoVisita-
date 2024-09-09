@@ -32,7 +32,7 @@ class MainActivity : ComponentActivity() {
                         modifier = Modifier
                             .padding(innerPadding)
                             .fillMaxSize()
-                            .background(Color(0xFF2E3B4E))
+                            .background(Color(0xFF6E93FA))
                     )
                 }
             }
@@ -70,13 +70,28 @@ fun CartaoVisita(modifier: Modifier = Modifier) {
         Text(
             text = "Estudante",
             fontSize = 18.sp,
-            color = Color.LightGray
+            color = Color.White
         )
 
         Text(
             text = "UNICAP",
             fontSize = 18.sp,
-            color = Color.LightGray
+            color = Color.White
+        )
+
+        Spacer(modifier = Modifier.height(16.dp))
+
+        Text(
+            text = "Desenvolvedor Android",
+            fontSize = 18.sp,
+            color = Color.White
+        )
+
+        Image(
+            painter = painterResource(id = R.drawable.android),
+            contentDescription = "Logo android",
+            modifier = Modifier
+                .size(80.dp)
         )
 
         Spacer(modifier = Modifier.height(16.dp))
@@ -90,7 +105,7 @@ fun CartaoVisitaPreview() {
         CartaoVisita(
             modifier = Modifier
                 .fillMaxSize()
-                .background(Color(0xFF2E3B4E))
+                .background(Color(0xFF6E93FA))
         )
     }
 }
